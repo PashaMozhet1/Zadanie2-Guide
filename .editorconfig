@@ -1,0 +1,16 @@
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+#
+end_of_line = lf
+# вставка пустой строки после последней строки
+insert_final_newline = true
+# обрезка пробелов в конце строки
+trim_trailing_whitespace = true
+# кодировка
+charset = utf-8
+# для разных типов файлов можно задавать разные настройки, я настрою одинаково для всех: отступ = таб, ширина отступа = 4 пробела
+indent_style = tab
+indent_size = 4
