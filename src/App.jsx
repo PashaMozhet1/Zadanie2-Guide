@@ -4,7 +4,7 @@ import data from './data.json';
 
 export const App = () => {
 	// Можно задать 2 состояния — steps и activeIndex
-	const [steps, setSteps] = useState(data);
+	const [steps] = useState(data);
 	const [activeIndex, setActiveIndex] = useState(0);
 
 	// console.log(steps.at(activeIndex)['content']);
@@ -64,15 +64,6 @@ export const App = () => {
 	if (activeIndex == 0) {
 		isFirstStepActive = true;
 	}
-
-	let isLastStepActive;
-	if (activeIndex == 6) {
-		isLastStepActive = true;
-	}
-
-	const stepsButtonCLick = () => {
-		// setActiveIndex(index);
-	};
 
 	return (
 		<div className={styles.container}>
